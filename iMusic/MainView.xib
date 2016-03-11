@@ -21,7 +21,7 @@
                     <rect key="frame" x="235" y="368" width="131" height="61"/>
                     <state key="normal" title="About iMusic"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="135" y="356" width="131" height="61"/>
+                        <rect key="frame" x="108" y="356" width="184" height="60"/>
                     </variation>
                     <connections>
                         <action selector="showAboutView:" destination="-1" eventType="touchUpInside" id="eZi-Za-jGq"/>
@@ -31,7 +31,7 @@
                     <rect key="frame" x="245" y="284" width="111" height="48"/>
                     <state key="normal" title="View List"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="145" y="243" width="111" height="48"/>
+                        <rect key="frame" x="108" y="243" width="184" height="60"/>
                     </variation>
                     <connections>
                         <action selector="showList:" destination="-1" eventType="touchUpInside" id="h7W-uB-OPl"/>

@@ -44,7 +44,7 @@
     UIView *topView = [self.view viewWithTag:30];
     topView.backgroundColor = [UIColor purpleColor];
     
-    [v2 removeFromSuperview];
+    v2.hidden = YES;
     
     for (UIView *view in [self.view subviews]) {
         NSLog(@"Current view: %i", view.tag);

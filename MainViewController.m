@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "PreferencesViewController.h"
 
 @implementation MainViewController
 
@@ -20,8 +21,19 @@
 	[super viewDidUnload];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    NSLog(@"viewWillDisappear");
+}
+
 - (IBAction)showPreferences:(id)sender {
-    NSLog(@"Show Preferences");
+    id controller = [[PreferencesViewController alloc] initWithNibName:@"PreferencesView" bundle:NULL];
+    [self presentViewController:controller animated:YES completion:NULL];
 }
 
 - (IBAction)showList:(id)sender {

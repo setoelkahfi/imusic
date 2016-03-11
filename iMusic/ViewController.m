@@ -41,6 +41,9 @@
     [self.view addSubview:v2];
     [self.view addSubview:v3];
     
+    for (UIView *view in [self.view subviews]) {
+        NSLog(@"Current view: %i", view.tag);
+    }
     
 }
 

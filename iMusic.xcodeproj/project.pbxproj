@@ -11,14 +11,7 @@
 		BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47F1C916C2E00561D56 /* AppDelegate.m */; };
 		BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4871C916C2F00561D56 /* Assets.xcassets */; };
 		BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4951C916C2F00561D56 /* iMusicTests.m */; };
-		BD63F4A61C91835900561D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4A51C91835900561D56 /* MainViewController.m */; };
-		BD63F4A71C91835900561D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4A51C91835900561D56 /* MainViewController.m */; };
-		BD63F4A91C91848400561D56 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4A81C91848400561D56 /* MainView.xib */; };
-		BD63F4AA1C91848400561D56 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4A81C91848400561D56 /* MainView.xib */; };
-		BD63F4AE1C927DA100561D56 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* PreferencesViewController.m */; };
-		BD63F4AF1C927DA100561D56 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* PreferencesViewController.m */; };
-		BD63F4B01C927DA100561D56 /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* PreferencesView.xib */; };
-		BD63F4B11C927DA100561D56 /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* PreferencesView.xib */; };
+		BD63F4B51C92A09600561D56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4B41C92A09600561D56 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +34,9 @@
 		BD63F4911C916C2F00561D56 /* iMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD63F4951C916C2F00561D56 /* iMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMusicTests.m; sourceTree = "<group>"; };
 		BD63F4971C916C2F00561D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD63F4A41C91835900561D56 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
-		BD63F4A51C91835900561D56 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
-		BD63F4A81C91848400561D56 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		BD63F4AB1C927DA100561D56 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesViewController.h; path = ../PreferencesViewController.h; sourceTree = "<group>"; };
-		BD63F4AC1C927DA100561D56 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferencesViewController.m; path = ../PreferencesViewController.m; sourceTree = "<group>"; };
-		BD63F4AD1C927DA100561D56 /* PreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PreferencesView.xib; path = ../PreferencesView.xib; sourceTree = "<group>"; };
+		BD63F4B21C929E3300561D56 /* iMusic-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iMusic-prefix.pch"; sourceTree = "<group>"; };
+		BD63F4B31C92A09600561D56 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD63F4B41C92A09600561D56 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,17 +78,13 @@
 		BD63F47A1C916C2E00561D56 /* iMusic */ = {
 			isa = PBXGroup;
 			children = (
-				BD63F4AB1C927DA100561D56 /* PreferencesViewController.h */,
-				BD63F4AC1C927DA100561D56 /* PreferencesViewController.m */,
-				BD63F4AD1C927DA100561D56 /* PreferencesView.xib */,
-				BD63F4A41C91835900561D56 /* MainViewController.h */,
-				BD63F4A51C91835900561D56 /* MainViewController.m */,
 				BD63F47E1C916C2E00561D56 /* AppDelegate.h */,
 				BD63F47F1C916C2E00561D56 /* AppDelegate.m */,
+				BD63F4B31C92A09600561D56 /* ViewController.h */,
+				BD63F4B41C92A09600561D56 /* ViewController.m */,
 				BD63F4871C916C2F00561D56 /* Assets.xcassets */,
 				BD63F48C1C916C2F00561D56 /* Info.plist */,
 				BD63F47B1C916C2E00561D56 /* Supporting Files */,
-				BD63F4A81C91848400561D56 /* MainView.xib */,
 			);
 			path = iMusic;
 			sourceTree = "<group>";
@@ -106,6 +92,7 @@
 		BD63F47B1C916C2E00561D56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD63F4B21C929E3300561D56 /* iMusic-prefix.pch */,
 				BD63F47C1C916C2E00561D56 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -201,8 +188,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */,
-				BD63F4A91C91848400561D56 /* MainView.xib in Resources */,
-				BD63F4B01C927DA100561D56 /* PreferencesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD63F4AA1C91848400561D56 /* MainView.xib in Resources */,
-				BD63F4B11C927DA100561D56 /* PreferencesView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD63F4B51C92A09600561D56 /* ViewController.m in Sources */,
 				BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */,
-				BD63F4A61C91835900561D56 /* MainViewController.m in Sources */,
 				BD63F47D1C916C2E00561D56 /* main.m in Sources */,
-				BD63F4AE1C927DA100561D56 /* PreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,9 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD63F4AF1C927DA100561D56 /* PreferencesViewController.m in Sources */,
 				BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */,
-				BD63F4A71C91835900561D56 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +314,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iMusic/iMusic-prefix.pch";
 				INFOPLIST_FILE = iMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.streetdirectory.iMusic;
@@ -345,6 +327,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iMusic/iMusic-prefix.pch";
 				INFOPLIST_FILE = iMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.streetdirectory.iMusic;
@@ -395,6 +379,7 @@
 				BD63F49C1C916C2F00561D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD63F49D1C916C2F00561D56 /* Build configuration list for PBXNativeTarget "iMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +388,7 @@
 				BD63F49F1C916C2F00561D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

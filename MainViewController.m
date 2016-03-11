@@ -8,13 +8,25 @@
 
 #import "MainViewController.h"
 #import "AboutViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation MainViewController
+
+
+#pragma mark - Properties
+
+@synthesize buttonViewList = _buttonViewList;
+@synthesize buttonAbout = _buttonAbout;
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    _buttonViewList.layer.borderWidth = 1.0f;
+    _buttonViewList.layer.borderColor = [[UIColor blackColor] CGColor];
+    
+    _buttonAbout.layer.borderWidth = 1.0f;
+    _buttonAbout.layer.borderColor = [[UIColor blackColor] CGColor];
 }
 
 - (void)viewDidUnload {

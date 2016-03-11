@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="iMusic">
             <connections>
+                <outlet property="buttonAbout" destination="vrw-zE-U5j" id="ETc-Dz-yk0"/>
+                <outlet property="buttonViewList" destination="tAL-Ei-5Gv" id="0sA-y2-z2d"/>
                 <outlet property="view" destination="iN0-l3-epB" id="t3q-sD-3zR"/>
             </connections>
         </placeholder>
@@ -17,20 +19,27 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrw-zE-U5j">
                     <rect key="frame" x="235" y="368" width="131" height="61"/>
-                    <state key="normal" title="Preferences"/>
+                    <state key="normal" title="About iMusic"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="135" y="356" width="131" height="61"/>
+                    </variation>
                     <connections>
                         <action selector="showAboutView:" destination="-1" eventType="touchUpInside" id="eZi-Za-jGq"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAL-Ei-5Gv">
                     <rect key="frame" x="245" y="284" width="111" height="48"/>
-                    <state key="normal" title="Show List"/>
+                    <state key="normal" title="View List"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="145" y="243" width="111" height="48"/>
+                    </variation>
                     <connections>
                         <action selector="showList:" destination="-1" eventType="touchUpInside" id="h7W-uB-OPl"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="468" y="330"/>
         </view>
     </objects>
 </document>

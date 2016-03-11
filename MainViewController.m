@@ -20,4 +20,12 @@
 	[super viewDidUnload];
 }
 
+- (IBAction)showPreferences:(id)sender {
+    NSLog(@"Show Preferences");
+}
+
+- (IBAction)showList:(id)sender {
+    NSLog(@"Show list");
+}
+
 @end

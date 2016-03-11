@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "PreferencesViewController.h"
+#import "AboutViewController.h"
 
 @implementation MainViewController
 
@@ -31,8 +31,8 @@
     NSLog(@"viewWillDisappear");
 }
 
-- (IBAction)showPreferences:(id)sender {
-    id controller = [[PreferencesViewController alloc] initWithNibName:@"PreferencesView" bundle:NULL];
+- (IBAction)showAboutView:(id)sender {
+    id controller = [[AboutViewController alloc] initWithNibName:@"AboutView" bundle:NULL];
     [self presentViewController:controller animated:YES completion:NULL];
 }
 

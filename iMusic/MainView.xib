@@ -19,7 +19,7 @@
                     <rect key="frame" x="235" y="368" width="131" height="61"/>
                     <state key="normal" title="Preferences"/>
                     <connections>
-                        <action selector="showPreferences:" destination="-1" eventType="touchUpInside" id="4Pk-eO-uLC"/>
+                        <action selector="showAboutView:" destination="-1" eventType="touchUpInside" id="eZi-Za-jGq"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAL-Ei-5Gv">

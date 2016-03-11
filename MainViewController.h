@@ -7,7 +7,7 @@
 //
 
 @interface MainViewController : UIViewController
-- (IBAction)showPreferences:(id)sender;
+- (IBAction)showAboutView:(id)sender;
 - (IBAction)showList:(id)sender;
 
 @end

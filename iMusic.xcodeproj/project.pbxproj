@@ -15,10 +15,10 @@
 		BD63F4A71C91835900561D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4A51C91835900561D56 /* MainViewController.m */; };
 		BD63F4A91C91848400561D56 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4A81C91848400561D56 /* MainView.xib */; };
 		BD63F4AA1C91848400561D56 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4A81C91848400561D56 /* MainView.xib */; };
-		BD63F4AE1C927DA100561D56 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* PreferencesViewController.m */; };
-		BD63F4AF1C927DA100561D56 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* PreferencesViewController.m */; };
-		BD63F4B01C927DA100561D56 /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* PreferencesView.xib */; };
-		BD63F4B11C927DA100561D56 /* PreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* PreferencesView.xib */; };
+		BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* AboutViewController.m */; };
+		BD63F4AF1C927DA100561D56 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* AboutViewController.m */; };
+		BD63F4B01C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
+		BD63F4B11C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +44,9 @@
 		BD63F4A41C91835900561D56 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
 		BD63F4A51C91835900561D56 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 		BD63F4A81C91848400561D56 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
-		BD63F4AB1C927DA100561D56 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesViewController.h; path = ../PreferencesViewController.h; sourceTree = "<group>"; };
-		BD63F4AC1C927DA100561D56 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferencesViewController.m; path = ../PreferencesViewController.m; sourceTree = "<group>"; };
-		BD63F4AD1C927DA100561D56 /* PreferencesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PreferencesView.xib; path = ../PreferencesView.xib; sourceTree = "<group>"; };
+		BD63F4AB1C927DA100561D56 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ../AboutViewController.h; sourceTree = "<group>"; };
+		BD63F4AC1C927DA100561D56 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../AboutViewController.m; sourceTree = "<group>"; };
+		BD63F4AD1C927DA100561D56 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutView.xib; path = ../AboutView.xib; sourceTree = "<group>"; };
 		BD63F4B61C92A7E000561D56 /* iMusic-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iMusic-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,9 +89,9 @@
 		BD63F47A1C916C2E00561D56 /* iMusic */ = {
 			isa = PBXGroup;
 			children = (
-				BD63F4AB1C927DA100561D56 /* PreferencesViewController.h */,
-				BD63F4AC1C927DA100561D56 /* PreferencesViewController.m */,
-				BD63F4AD1C927DA100561D56 /* PreferencesView.xib */,
+				BD63F4AB1C927DA100561D56 /* AboutViewController.h */,
+				BD63F4AC1C927DA100561D56 /* AboutViewController.m */,
+				BD63F4AD1C927DA100561D56 /* AboutView.xib */,
 				BD63F4A41C91835900561D56 /* MainViewController.h */,
 				BD63F4A51C91835900561D56 /* MainViewController.m */,
 				BD63F47E1C916C2E00561D56 /* AppDelegate.h */,
@@ -204,7 +204,7 @@
 			files = (
 				BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */,
 				BD63F4A91C91848400561D56 /* MainView.xib in Resources */,
-				BD63F4B01C927DA100561D56 /* PreferencesView.xib in Resources */,
+				BD63F4B01C927DA100561D56 /* AboutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD63F4AA1C91848400561D56 /* MainView.xib in Resources */,
-				BD63F4B11C927DA100561D56 /* PreferencesView.xib in Resources */,
+				BD63F4B11C927DA100561D56 /* AboutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +227,7 @@
 				BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */,
 				BD63F4A61C91835900561D56 /* MainViewController.m in Sources */,
 				BD63F47D1C916C2E00561D56 /* main.m in Sources */,
-				BD63F4AE1C927DA100561D56 /* PreferencesViewController.m in Sources */,
+				BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD63F4AF1C927DA100561D56 /* PreferencesViewController.m in Sources */,
+				BD63F4AF1C927DA100561D56 /* AboutViewController.m in Sources */,
 				BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */,
 				BD63F4A71C91835900561D56 /* MainViewController.m in Sources */,
 			);

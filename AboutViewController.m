@@ -6,13 +6,13 @@
 //  Copyright (c) 2016 Streetdirectory Pte Ltd. All rights reserved.
 //
 
-#import "PreferencesViewController.h"
+#import "AboutViewController.h"
 
-@interface PreferencesViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation PreferencesViewController
+@implementation AboutViewController
 
 #pragma mark - View lifecycle
 
@@ -24,7 +24,7 @@
 	[super viewDidUnload];
 }
 
-- (IBAction)dismissPreferences:(id)sender {
+- (IBAction)dismissAboutView:(id)sender {
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 @end

@@ -6,8 +6,8 @@
 //  Copyright (c) 2016 Streetdirectory Pte Ltd. All rights reserved.
 //
 
-@interface PreferencesViewController : UIViewController
+@interface AboutViewController : UIViewController
 
-- (IBAction)dismissPreferences:(id)sender;
+- (IBAction)dismissAboutView:(id)sender;
 
 @end

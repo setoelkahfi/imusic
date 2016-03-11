@@ -15,6 +15,7 @@
 
 #pragma mark - Properties
 
+@synthesize imageLogo = _imageLogo;
 @synthesize buttonViewList = _buttonViewList;
 @synthesize buttonAbout = _buttonAbout;
 
@@ -27,6 +28,13 @@
     
     _buttonAbout.layer.borderWidth = 1.0f;
     _buttonAbout.layer.borderColor = [[UIColor blackColor] CGColor];
+    
+    UIImage *logoImage = [UIImage imageNamed:@"logo"];
+    _imageLogo.image = logoImage;
+    
+    
+    UIImage *backgroundImage = [UIImage imageNamed:@"background"];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
 }
 
 - (void)viewDidUnload {

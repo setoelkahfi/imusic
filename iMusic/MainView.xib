@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="buttonAbout" destination="vrw-zE-U5j" id="ETc-Dz-yk0"/>
                 <outlet property="buttonViewList" destination="tAL-Ei-5Gv" id="0sA-y2-z2d"/>
+                <outlet property="imageLogo" destination="6GF-zn-mhJ" id="qhT-Fr-2tZ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="t3q-sD-3zR"/>
             </connections>
         </placeholder>
@@ -21,7 +22,7 @@
                     <rect key="frame" x="235" y="368" width="131" height="61"/>
                     <state key="normal" title="About iMusic"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="108" y="356" width="184" height="60"/>
+                        <rect key="frame" x="108" y="451" width="184" height="60"/>
                     </variation>
                     <connections>
                         <action selector="showAboutView:" destination="-1" eventType="touchUpInside" id="eZi-Za-jGq"/>
@@ -31,14 +32,30 @@
                     <rect key="frame" x="245" y="284" width="111" height="48"/>
                     <state key="normal" title="View List"/>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="108" y="243" width="184" height="60"/>
+                        <rect key="frame" x="108" y="338" width="184" height="60"/>
                     </variation>
                     <connections>
                         <action selector="showList:" destination="-1" eventType="touchUpInside" id="h7W-uB-OPl"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6GF-zn-mhJ">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="80" y="120" width="240" height="98"/>
+                    </variation>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="6GF-zn-mhJ"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="6GF-zn-mhJ"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="468" y="330"/>
         </view>
     </objects>

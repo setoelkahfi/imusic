@@ -9,6 +9,7 @@
 @interface MainViewController : UIViewController
 
 #pragma Properties
+@property (weak, nonatomic) IBOutlet UIImageView *imageLogo;
 @property (weak, nonatomic) IBOutlet UIButton *buttonViewList;
 @property (weak, nonatomic) IBOutlet UIButton *buttonAbout;
 

@@ -44,7 +44,7 @@
     UIView *topView = [self.view viewWithTag:30];
     topView.backgroundColor = [UIColor purpleColor];
     
-    [self.view bringSubviewToFront:v2];
+    [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:2];
     
     for (UIView *view in [self.view subviews]) {
         NSLog(@"Current view: %i", view.tag);

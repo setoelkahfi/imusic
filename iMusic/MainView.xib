@@ -18,21 +18,27 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrw-zE-U5j">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrw-zE-U5j">
                     <rect key="frame" x="235" y="368" width="131" height="61"/>
-                    <state key="normal" title="About iMusic"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="About iMusic">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="108" y="451" width="184" height="60"/>
+                        <rect key="frame" x="108" y="451" width="184" height="50"/>
                     </variation>
                     <connections>
                         <action selector="showAboutView:" destination="-1" eventType="touchUpInside" id="eZi-Za-jGq"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAL-Ei-5Gv">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAL-Ei-5Gv">
                     <rect key="frame" x="245" y="284" width="111" height="48"/>
-                    <state key="normal" title="View List"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="View List">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <variation key="widthClass=compact" fixedFrame="YES">
-                        <rect key="frame" x="108" y="338" width="184" height="60"/>
+                        <rect key="frame" x="108" y="338" width="184" height="50"/>
                     </variation>
                     <connections>
                         <action selector="showList:" destination="-1" eventType="touchUpInside" id="h7W-uB-OPl"/>

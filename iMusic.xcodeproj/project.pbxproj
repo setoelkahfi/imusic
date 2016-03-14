@@ -89,17 +89,12 @@
 		BD63F47A1C916C2E00561D56 /* iMusic */ = {
 			isa = PBXGroup;
 			children = (
-				BD63F4AB1C927DA100561D56 /* AboutViewController.h */,
-				BD63F4AC1C927DA100561D56 /* AboutViewController.m */,
-				BD63F4AD1C927DA100561D56 /* AboutView.xib */,
-				BD63F4A41C91835900561D56 /* MainViewController.h */,
-				BD63F4A51C91835900561D56 /* MainViewController.m */,
 				BD63F47E1C916C2E00561D56 /* AppDelegate.h */,
 				BD63F47F1C916C2E00561D56 /* AppDelegate.m */,
 				BD63F4871C916C2F00561D56 /* Assets.xcassets */,
-				BD63F48C1C916C2F00561D56 /* Info.plist */,
+				BDF5E7201C96684B0023D5A4 /* Controllers */,
+				BDF5E71F1C9667790023D5A4 /* Models */,
 				BD63F47B1C916C2E00561D56 /* Supporting Files */,
-				BD63F4A81C91848400561D56 /* MainView.xib */,
 			);
 			path = iMusic;
 			sourceTree = "<group>";
@@ -107,6 +102,7 @@
 		BD63F47B1C916C2E00561D56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD63F48C1C916C2F00561D56 /* Info.plist */,
 				BD63F47C1C916C2E00561D56 /* main.m */,
 				BD63F4B61C92A7E000561D56 /* iMusic-prefix.pch */,
 			);
@@ -120,6 +116,26 @@
 				BD63F4971C916C2F00561D56 /* Info.plist */,
 			);
 			path = iMusicTests;
+			sourceTree = "<group>";
+		};
+		BDF5E71F1C9667790023D5A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BDF5E7201C96684B0023D5A4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BD63F4AB1C927DA100561D56 /* AboutViewController.h */,
+				BD63F4AC1C927DA100561D56 /* AboutViewController.m */,
+				BD63F4AD1C927DA100561D56 /* AboutView.xib */,
+				BD63F4A41C91835900561D56 /* MainViewController.h */,
+				BD63F4A51C91835900561D56 /* MainViewController.m */,
+				BD63F4A81C91848400561D56 /* MainView.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

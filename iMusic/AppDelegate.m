@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+#import "ArchivingViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,7 +25,7 @@
     
     self.window.backgroundColor = [UIColor whiteColor];
     
-    id controller = [[MainViewController alloc] initWithNibName:@"MainView" bundle:nil];
+    id controller = [[ArchivingViewController alloc] initWithNibName:@"ArchivingView" bundle:nil];
     self.window.rootViewController = controller;
     
     [self.window makeKeyAndVisible];

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD56161C1C97BDE1008BE0CB /* ArchivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56161A1C97BDE1008BE0CB /* ArchivingViewController.m */; };
+		BD56161D1C97BDE1008BE0CB /* ArchivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD56161B1C97BDE1008BE0CB /* ArchivingView.xib */; };
 		BD63F47D1C916C2E00561D56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47C1C916C2E00561D56 /* main.m */; };
 		BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47F1C916C2E00561D56 /* AppDelegate.m */; };
 		BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4871C916C2F00561D56 /* Assets.xcassets */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD5616191C97BDE1008BE0CB /* ArchivingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchivingViewController.h; sourceTree = "<group>"; };
+		BD56161A1C97BDE1008BE0CB /* ArchivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchivingViewController.m; sourceTree = "<group>"; };
+		BD56161B1C97BDE1008BE0CB /* ArchivingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArchivingView.xib; sourceTree = "<group>"; };
 		BD63F4781C916C2E00561D56 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD63F47C1C916C2E00561D56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD63F47E1C916C2E00561D56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +151,9 @@
 				BD63F4A41C91835900561D56 /* MainViewController.h */,
 				BD63F4A51C91835900561D56 /* MainViewController.m */,
 				BD63F4A81C91848400561D56 /* MainView.xib */,
+				BD5616191C97BDE1008BE0CB /* ArchivingViewController.h */,
+				BD56161A1C97BDE1008BE0CB /* ArchivingViewController.m */,
+				BD56161B1C97BDE1008BE0CB /* ArchivingView.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 			files = (
 				BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */,
 				BD63F4A91C91848400561D56 /* MainView.xib in Resources */,
+				BD56161D1C97BDE1008BE0CB /* ArchivingView.xib in Resources */,
 				BD63F4B01C927DA100561D56 /* AboutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +263,7 @@
 			files = (
 				BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */,
 				BD63F4A61C91835900561D56 /* MainViewController.m in Sources */,
+				BD56161C1C97BDE1008BE0CB /* ArchivingViewController.m in Sources */,
 				BD63F47D1C916C2E00561D56 /* main.m in Sources */,
 				BDF5E7281C97AD530023D5A4 /* Album.m in Sources */,
 				BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */,

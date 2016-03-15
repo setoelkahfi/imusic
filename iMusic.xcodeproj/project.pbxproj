@@ -19,6 +19,10 @@
 		BD63F4AF1C927DA100561D56 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* AboutViewController.m */; };
 		BD63F4B01C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
 		BD63F4B11C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
+		BDF5E7241C966B520023D5A4 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7231C966B520023D5A4 /* Artist.m */; };
+		BDF5E7251C966B520023D5A4 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7231C966B520023D5A4 /* Artist.m */; };
+		BDF5E7281C97AD530023D5A4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7271C97AD530023D5A4 /* Album.m */; };
+		BDF5E7291C97AD530023D5A4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7271C97AD530023D5A4 /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		BD63F4AC1C927DA100561D56 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../AboutViewController.m; sourceTree = "<group>"; };
 		BD63F4AD1C927DA100561D56 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutView.xib; path = ../AboutView.xib; sourceTree = "<group>"; };
 		BD63F4B61C92A7E000561D56 /* iMusic-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iMusic-prefix.pch"; sourceTree = "<group>"; };
+		BDF5E7221C966B520023D5A4 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		BDF5E7231C966B520023D5A4 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		BDF5E7261C97AD530023D5A4 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		BDF5E7271C97AD530023D5A4 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,10 @@
 		BDF5E71F1C9667790023D5A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BDF5E7221C966B520023D5A4 /* Artist.h */,
+				BDF5E7231C966B520023D5A4 /* Artist.m */,
+				BDF5E7261C97AD530023D5A4 /* Album.h */,
+				BDF5E7271C97AD530023D5A4 /* Album.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -243,7 +255,9 @@
 				BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */,
 				BD63F4A61C91835900561D56 /* MainViewController.m in Sources */,
 				BD63F47D1C916C2E00561D56 /* main.m in Sources */,
+				BDF5E7281C97AD530023D5A4 /* Album.m in Sources */,
 				BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */,
+				BDF5E7241C966B520023D5A4 /* Artist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +267,8 @@
 			files = (
 				BD63F4AF1C927DA100561D56 /* AboutViewController.m in Sources */,
 				BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */,
+				BDF5E7251C966B520023D5A4 /* Artist.m in Sources */,
+				BDF5E7291C97AD530023D5A4 /* Album.m in Sources */,
 				BD63F4A71C91835900561D56 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

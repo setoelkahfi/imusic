@@ -14,6 +14,13 @@
 
 @implementation ArchivingViewController
 
+#pragma mark - Properties
+
+@synthesize fileURL = _fileURL;
+@synthesize buttonReadArchivedData = _buttonReadArchivedData;
+@synthesize buttonWriteArchivedData = _buttonWriteArchivedData;
+
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
@@ -22,6 +29,15 @@
 
 - (void)viewDidUnload {
 	[super viewDidUnload];
+}
+
+
+- (IBAction)writeArchivedData:(id)sender {
+    NSLog(@"Write data");
+}
+
+- (IBAction)readArchivedData:(id)sender {
+    NSLog(@"Read data");
 }
 
 @end

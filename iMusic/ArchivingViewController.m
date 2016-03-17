@@ -46,7 +46,8 @@
     
     NSData *fileData = [NSKeyedArchiver archivedDataWithRootObject:items];
     [fileData writeToURL:self.fileURL atomically:YES];
-
+    
+    NSLog(@"app dir: %@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
 }
 
 - (IBAction)readArchivedData:(id)sender {

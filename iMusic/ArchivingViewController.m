@@ -51,7 +51,11 @@
 }
 
 - (IBAction)readArchivedData:(id)sender {
-    NSLog(@"Read data");
+    
+    NSData *data = [NSData dataWithContentsOfURL:self.fileURL];
+    NSMutableArray *items = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    NSLog(@"%@", items);
+    
 }
 
 @end

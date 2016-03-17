@@ -7,6 +7,8 @@
 //
 
 #import "ArchivingViewController.h"
+#import "Artist.h"
+#import "Album.h"
 
 @interface ArchivingViewController ()
 
@@ -25,6 +27,8 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    NSArray *urls = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    self.fileURL = [[urls lastObject] URLByAppendingPathComponent:@"iMusic.data"];
 }
 
 - (void)viewDidUnload {
@@ -33,7 +37,16 @@
 
 
 - (IBAction)writeArchivedData:(id)sender {
-    NSLog(@"Write data");
+    
+    NSMutableArray *items = [NSMutableArray array];
+    
+    [items addObject:@"Hello"];
+    [items addObject:[NSDate date]];
+    [items addObject:[NSNumber numberWithFloat:12.0]];
+    
+    NSData *fileData = [NSKeyedArchiver archivedDataWithRootObject:items];
+    [fileData writeToURL:self.fileURL atomically:YES];
+
 }
 
 - (IBAction)readArchivedData:(id)sender {

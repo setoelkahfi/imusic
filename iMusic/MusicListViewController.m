@@ -9,10 +9,12 @@
 #import "MusicListViewController.h"
 
 @interface MusicListViewController ()
-
+@property (nonatomic, strong) NSMutableArray *albums;
 @end
 
 @implementation MusicListViewController
+
+@synthesize albums = _albums;
 
 - (void)viewDidLoad {
 	[super viewDidLoad];

@@ -12,6 +12,7 @@
 @property (nonatomic, assign) NSUInteger albumID;
 @property (nonatomic, copy) NSString *albumName;
 @property (nonatomic, copy) NSString *imageURLString;
+@property (nonatomic, copy) UIImage *albumImage;
 @property (nonatomic, copy) NSString *price;
 @property (nonatomic, copy) NSString *iTunesURLString;
 @property (nonatomic, strong) NSDate *releaseDate;

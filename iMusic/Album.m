@@ -11,6 +11,7 @@
 #define ALBUM_ID_KEY            @"albumID"
 #define ALBUM_NAME_KEY          @"albumName"
 #define IMAGE_URL_STRING_KEY    @"imageURLString"
+#define ALBUM_IMAGE_KEY         @"albumImage"
 #define PRICE_KEY               @"price"
 #define ITUNES_URL_STRING_KEY   @"iTunesURLString"
 #define RELEASE_DATE_KEY        @"releaseDate"
@@ -21,7 +22,8 @@
 
 @synthesize albumID =  _albumID;
 @synthesize albumName =  _albumName;
-@synthesize imageURLString = _imageURLString;
+@synthesize imageURLString = _imageUdRLString;
+@synthesize albumImage = _albumImage;
 @synthesize price = _price;
 @synthesize iTunesURLString = _iTunesURLString;
 @synthesize releaseDate = _releaseDate;
@@ -34,6 +36,7 @@
         self.albumID = [aDecoder decodeIntegerForKey:ALBUM_ID_KEY];
         self.albumName = [aDecoder decodeObjectForKey:ALBUM_NAME_KEY];
         self.imageURLString = [aDecoder decodeObjectForKey:IMAGE_URL_STRING_KEY];
+        self.albumImage = [aDecoder decodeObjectForKey:ALBUM_IMAGE_KEY];
         self.price = [aDecoder decodeObjectForKey:PRICE_KEY];
         self.iTunesURLString = [aDecoder decodeObjectForKey:ITUNES_URL_STRING_KEY];
         self.releaseDate = [aDecoder decodeObjectForKey:RELEASE_DATE_KEY];
@@ -47,6 +50,7 @@
     [aCoder encodeInteger:self.albumID forKey:ALBUM_ID_KEY];
     [aCoder encodeObject:self.albumName forKey:ALBUM_NAME_KEY];
     [aCoder encodeObject:self.imageURLString forKey:IMAGE_URL_STRING_KEY];
+    [aCoder encodeObject:self.albumImage forKey:ALBUM_IMAGE_KEY];
     [aCoder encodeObject:self.price forKey:PRICE_KEY];
     [aCoder encodeObject:self.iTunesURLString forKey:ITUNES_URL_STRING_KEY];
     [aCoder encodeObject:self.releaseDate forKey:RELEASE_DATE_KEY];

@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    self.title = @"iMusic";
 //    _buttonViewList.layer.borderWidth = 1.0f;
 //    _buttonViewList.layer.borderColor = [[UIColor blackColor] CGColor];
     

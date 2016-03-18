@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD22B97E1C9BBC74007C7C2F /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */; };
 		BD22B97F1C9BBC7C007C7C2F /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */; };
+		BD22B9831C9C3703007C7C2F /* iMusic.data in Resources */ = {isa = PBXBuildFile; fileRef = BD22B9801C9C3440007C7C2F /* iMusic.data */; };
 		BD56161C1C97BDE1008BE0CB /* ArchivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56161A1C97BDE1008BE0CB /* ArchivingViewController.m */; };
 		BD56161D1C97BDE1008BE0CB /* ArchivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD56161B1C97BDE1008BE0CB /* ArchivingView.xib */; };
 		BD63F47D1C916C2E00561D56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47C1C916C2E00561D56 /* main.m */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		BD22B97C1C9BBC73007C7C2F /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
 		BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
+		BD22B9801C9C3440007C7C2F /* iMusic.data */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = iMusic.data; sourceTree = "<group>"; };
 		BD5616191C97BDE1008BE0CB /* ArchivingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchivingViewController.h; sourceTree = "<group>"; };
 		BD56161A1C97BDE1008BE0CB /* ArchivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchivingViewController.m; sourceTree = "<group>"; };
 		BD56161B1C97BDE1008BE0CB /* ArchivingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArchivingView.xib; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD22B9821C9C36DF007C7C2F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BD22B9801C9C3440007C7C2F /* iMusic.data */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		BD63F46F1C916C2E00561D56 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		BD63F47B1C916C2E00561D56 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD22B9821C9C36DF007C7C2F /* Data */,
 				BD63F48C1C916C2F00561D56 /* Info.plist */,
 				BD63F47C1C916C2E00561D56 /* main.m */,
 				BD63F4B61C92A7E000561D56 /* iMusic-prefix.pch */,
@@ -244,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD22B9831C9C3703007C7C2F /* iMusic.data in Resources */,
 				BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */,
 				BD63F4A91C91848400561D56 /* MainView.xib in Resources */,
 				BD56161D1C97BDE1008BE0CB /* ArchivingView.xib in Resources */,

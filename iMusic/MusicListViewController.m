@@ -7,6 +7,7 @@
 //
 
 #import "MusicListViewController.h"
+#import "Album.h"
 
 @interface MusicListViewController ()
 @property (nonatomic, strong) NSMutableArray *albums;
@@ -21,6 +22,12 @@
     self.title = @"iMusic List";
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    self.albums = [NSMutableArray arrayWithArray:[Album findAll]];
+    
+}
+
 - (void)viewDidUnload {
 	[super viewDidUnload];
 
@@ -29,14 +36,20 @@
 #pragma mark - UITableViewDataSource Methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return 0;
+	return self.albums.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	static NSString *CellIdentifier = @"Cell";
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-	// Configure the cell...
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    Album *album = [self.albums objectAtIndex:indexPath.row];
+    cell.imageView.image = album.albumImage;
+    cell.textLabel.text = album.albumName;
 
 	return cell;
 }

@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "AboutViewController.h"
+#import "MusicListViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation MainViewController
@@ -68,7 +69,8 @@
 }
 
 - (IBAction)showList:(id)sender {
-    NSLog(@"Show list");
+    id controller = [[MusicListViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

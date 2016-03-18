@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD22B97E1C9BBC74007C7C2F /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */; };
+		BD22B97F1C9BBC7C007C7C2F /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */; };
 		BD63F47D1C916C2E00561D56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47C1C916C2E00561D56 /* main.m */; };
 		BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47F1C916C2E00561D56 /* AppDelegate.m */; };
 		BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4871C916C2F00561D56 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD22B97C1C9BBC73007C7C2F /* MusicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListViewController.h; sourceTree = "<group>"; };
+		BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
 		BD63F4781C916C2E00561D56 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD63F47C1C916C2E00561D56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BD63F47E1C916C2E00561D56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				BD63F4A41C91835900561D56 /* MainViewController.h */,
 				BD63F4A51C91835900561D56 /* MainViewController.m */,
 				BD63F4A81C91848400561D56 /* MainView.xib */,
+				BD22B97C1C9BBC73007C7C2F /* MusicListViewController.h */,
+				BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 				BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */,
 				BD63F4A61C91835900561D56 /* MainViewController.m in Sources */,
 				BD63F47D1C916C2E00561D56 /* main.m in Sources */,
+				BD22B97E1C9BBC74007C7C2F /* MusicListViewController.m in Sources */,
 				BDF5E7281C97AD530023D5A4 /* Album.m in Sources */,
 				BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */,
 				BDF5E7241C966B520023D5A4 /* Artist.m in Sources */,
@@ -267,6 +274,7 @@
 			files = (
 				BD63F4AF1C927DA100561D56 /* AboutViewController.m in Sources */,
 				BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */,
+				BD22B97F1C9BBC7C007C7C2F /* MusicListViewController.m in Sources */,
 				BDF5E7251C966B520023D5A4 /* Artist.m in Sources */,
 				BDF5E7291C97AD530023D5A4 /* Album.m in Sources */,
 				BD63F4A71C91835900561D56 /* MainViewController.m in Sources */,

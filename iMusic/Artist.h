@@ -6,7 +6,7 @@
 //  Copyright (c) 2016 Streetdirectory Pte Ltd. All rights reserved.
 //
 
-@interface Artist : NSObject
+@interface Artist : NSObject <NSCoding>
 
 @property (nonatomic, assign) NSUInteger artistID;
 @property (nonatomic, copy) NSString *artistName;

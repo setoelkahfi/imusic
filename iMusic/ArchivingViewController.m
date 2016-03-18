@@ -38,23 +38,30 @@
 
 - (IBAction)writeArchivedData:(id)sender {
     
-    NSMutableArray *items = [NSMutableArray array];
+    Artist *artist = [Artist artistWithID:1 name:@"The Beatles"];
     
-    [items addObject:@"Hello"];
-    [items addObject:[NSDate date]];
-    [items addObject:[NSNumber numberWithFloat:12.0]];
+    Album *album = [[Album alloc] init];
+    album.albumID = 1;
+    album.albumName = @"Rubber Soul";
+    album.artist = artist;
     
-    NSData *fileData = [NSKeyedArchiver archivedDataWithRootObject:items];
-    [fileData writeToURL:self.fileURL atomically:YES];
+    Album *album2 = [[Album alloc] init];
+    album2.albumID = 1;
+    album2.albumName = @"Revolver";
+    album2.artist = artist;
+    
+    [album save];
+    [album2 save];
     
     NSLog(@"app dir: %@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
 }
 
 - (IBAction)readArchivedData:(id)sender {
     
-    NSData *data = [NSData dataWithContentsOfURL:self.fileURL];
-    NSMutableArray *items = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    NSLog(@"%@", items);
+    NSArray *albums = [Album findAll];
+    for (id album in albums) {
+        NSLog(@"%@", album);
+    }
     
 }
 

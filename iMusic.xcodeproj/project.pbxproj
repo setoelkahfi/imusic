@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BD22B97E1C9BBC74007C7C2F /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */; };
-		BD22B97F1C9BBC7C007C7C2F /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */; };
 		BD22B9831C9C3703007C7C2F /* iMusic.data in Resources */ = {isa = PBXBuildFile; fileRef = BD22B9801C9C3440007C7C2F /* iMusic.data */; };
 		BD56161C1C97BDE1008BE0CB /* ArchivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56161A1C97BDE1008BE0CB /* ArchivingViewController.m */; };
 		BD56161D1C97BDE1008BE0CB /* ArchivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD56161B1C97BDE1008BE0CB /* ArchivingView.xib */; };
@@ -17,17 +16,13 @@
 		BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4871C916C2F00561D56 /* Assets.xcassets */; };
 		BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4951C916C2F00561D56 /* iMusicTests.m */; };
 		BD63F4A61C91835900561D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4A51C91835900561D56 /* MainViewController.m */; };
-		BD63F4A71C91835900561D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4A51C91835900561D56 /* MainViewController.m */; };
 		BD63F4A91C91848400561D56 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4A81C91848400561D56 /* MainView.xib */; };
 		BD63F4AA1C91848400561D56 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4A81C91848400561D56 /* MainView.xib */; };
 		BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* AboutViewController.m */; };
-		BD63F4AF1C927DA100561D56 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* AboutViewController.m */; };
 		BD63F4B01C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
 		BD63F4B11C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
 		BDF5E7241C966B520023D5A4 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7231C966B520023D5A4 /* Artist.m */; };
-		BDF5E7251C966B520023D5A4 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7231C966B520023D5A4 /* Artist.m */; };
 		BDF5E7281C97AD530023D5A4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7271C97AD530023D5A4 /* Album.m */; };
-		BDF5E7291C97AD530023D5A4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7271C97AD530023D5A4 /* Album.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -294,12 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD63F4AF1C927DA100561D56 /* AboutViewController.m in Sources */,
 				BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */,
-				BD22B97F1C9BBC7C007C7C2F /* MusicListViewController.m in Sources */,
-				BDF5E7251C966B520023D5A4 /* Artist.m in Sources */,
-				BDF5E7291C97AD530023D5A4 /* Album.m in Sources */,
-				BD63F4A71C91835900561D56 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

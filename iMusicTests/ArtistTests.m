@@ -9,11 +9,17 @@
 #import "ArtistTests.h"
 #import "Artist.h"
 
-@implementation ArtistTests
+@implementation ArtistTests {
+    NSUInteger artistID;
+    NSString *artistName;
+}
+
+- (void)setUp {
+    artistID = 100;
+    artistName = @"Metallica";
+}
 
 - (void)testInitWithIDName {
-    NSUInteger artistID = 100;
-    NSString *artistName = @"Metallica";
     
     Artist *artist = [[Artist alloc] initWithID:artistID name:artistName];
     

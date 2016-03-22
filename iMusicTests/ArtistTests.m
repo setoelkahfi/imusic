@@ -33,4 +33,9 @@
     XCTAssertEqualObjects(artist.artistName, artistName);
 }
 
+- (void)testAddoptsNSCoding {
+    Artist *artist = [[Artist alloc] initWithID:artistID name:artistName];
+    XCTAssertTrue([artist conformsToProtocol:@protocol(NSCoding)], @"Artist does not adopt NSCoding");
+}
+
 @end

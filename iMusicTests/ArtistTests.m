@@ -39,4 +39,16 @@
     XCTAssertTrue([artist conformsToProtocol:@protocol(NSCoding)], @"Artist does not adopt NSCoding");
 }
 
+- (void)testInitWithCoder {
+    id stubCoder = [OCMockObject mockForClass:[NSCoder class]];
+    NSInteger localArtistID = (NSInteger)artistID;
+    [[[stubCoder stub] andReturnValue:OCMOCK_VALUE(localArtistID)] decodeIntegerForKey:@"artistID"];
+    [[[stubCoder stub] andReturn:artistName] decodeObjectForKey:@"artistName"];
+    
+    Artist *artist = [[Artist alloc] initWithCoder:stubCoder];
+    
+    XCTAssertEqual(artist.artistID, artistID);
+    XCTAssertEqualObjects(artist.artistName, artistName);
+}
+
 @end

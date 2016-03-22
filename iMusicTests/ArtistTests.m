@@ -7,6 +7,7 @@
 //
 
 #import "ArtistTests.h"
+#import "OCMock.h"
 #import "Artist.h"
 
 @implementation ArtistTests {
@@ -33,7 +34,7 @@
     XCTAssertEqualObjects(artist.artistName, artistName);
 }
 
-- (void)testAddoptsNSCoding {
+- (void)testAdoptsNSCoding {
     Artist *artist = [[Artist alloc] initWithID:artistID name:artistName];
     XCTAssertTrue([artist conformsToProtocol:@protocol(NSCoding)], @"Artist does not adopt NSCoding");
 }

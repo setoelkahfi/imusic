@@ -27,4 +27,10 @@
     XCTAssertEqualObjects(artist.artistName, artistName);
 }
 
+- (void)testArtistConvenienceInitializer {
+    Artist *artist = [Artist artistWithID:artistID name:artistName];
+    XCTAssertEqual(artist.artistID, artistID);
+    XCTAssertEqualObjects(artist.artistName, artistName);
+}
+
 @end

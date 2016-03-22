@@ -14,13 +14,13 @@
 		BD63F47D1C916C2E00561D56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47C1C916C2E00561D56 /* main.m */; };
 		BD63F4801C916C2E00561D56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47F1C916C2E00561D56 /* AppDelegate.m */; };
 		BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4871C916C2F00561D56 /* Assets.xcassets */; };
-		BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4951C916C2F00561D56 /* iMusicTests.m */; };
 		BD63F4A61C91835900561D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4A51C91835900561D56 /* MainViewController.m */; };
 		BD63F4A91C91848400561D56 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4A81C91848400561D56 /* MainView.xib */; };
 		BD63F4AA1C91848400561D56 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4A81C91848400561D56 /* MainView.xib */; };
 		BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* AboutViewController.m */; };
 		BD63F4B01C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
 		BD63F4B11C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
+		BD7AE1171C9FD9D0007D0867 /* ArtistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7AE1161C9FD9D0007D0867 /* ArtistTests.m */; };
 		BDF5E7241C966B520023D5A4 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7231C966B520023D5A4 /* Artist.m */; };
 		BDF5E7281C97AD530023D5A4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7271C97AD530023D5A4 /* Album.m */; };
 /* End PBXBuildFile section */
@@ -49,7 +49,6 @@
 		BD63F4871C916C2F00561D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD63F48C1C916C2F00561D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD63F4911C916C2F00561D56 /* iMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD63F4951C916C2F00561D56 /* iMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMusicTests.m; sourceTree = "<group>"; };
 		BD63F4971C916C2F00561D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD63F4A41C91835900561D56 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
 		BD63F4A51C91835900561D56 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
@@ -58,6 +57,8 @@
 		BD63F4AC1C927DA100561D56 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../AboutViewController.m; sourceTree = "<group>"; };
 		BD63F4AD1C927DA100561D56 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutView.xib; path = ../AboutView.xib; sourceTree = "<group>"; };
 		BD63F4B61C92A7E000561D56 /* iMusic-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iMusic-prefix.pch"; sourceTree = "<group>"; };
+		BD7AE1151C9FD9D0007D0867 /* ArtistTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistTests.h; sourceTree = "<group>"; };
+		BD7AE1161C9FD9D0007D0867 /* ArtistTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistTests.m; sourceTree = "<group>"; };
 		BDF5E7221C966B520023D5A4 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		BDF5E7231C966B520023D5A4 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		BDF5E7261C97AD530023D5A4 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
@@ -135,8 +136,9 @@
 		BD63F4941C916C2F00561D56 /* iMusicTests */ = {
 			isa = PBXGroup;
 			children = (
-				BD63F4951C916C2F00561D56 /* iMusicTests.m */,
 				BD63F4971C916C2F00561D56 /* Info.plist */,
+				BD7AE1151C9FD9D0007D0867 /* ArtistTests.h */,
+				BD7AE1161C9FD9D0007D0867 /* ArtistTests.m */,
 			);
 			path = iMusicTests;
 			sourceTree = "<group>";
@@ -289,7 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD63F4961C916C2F00561D56 /* iMusicTests.m in Sources */,
+				BD7AE1171C9FD9D0007D0867 /* ArtistTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

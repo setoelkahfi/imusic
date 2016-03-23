@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Album.h"
 
 @interface AlbumIntTests : XCTestCase
 
@@ -16,24 +17,19 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"iMusic" ofType:@"data"];
+    NSURL *sourceURL = [NSURL fileURLWithPath:path];
+    NSArray *urls = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    NSURL *destinationURL = [[urls lastObject] URLByAppendingPathComponent:@"iMusic.data"];
+    [[NSFileManager defaultManager] removeItemAtURL:destinationURL error:nil];
+    [[NSFileManager defaultManager] copyItemAtURL:sourceURL toURL:destinationURL error:nil];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testFindAll {
+    NSArray *albums = [Album findAll];
+    NSUInteger expectedCount = 12;
+    XCTAssertEqual([albums count], expectedCount);
 }
 
 @end

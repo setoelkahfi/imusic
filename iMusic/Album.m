@@ -64,7 +64,7 @@
 
 + (NSURL *)iMusicDataURL {
     NSArray *urls = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
-    return [[urls lastObject] URLByAppendingPathComponent:@"iMusicdata.imusic"];
+    return [[urls lastObject] URLByAppendingPathComponent:@"iMusic.data"];
 }
 
 + (NSArray *)findAll {

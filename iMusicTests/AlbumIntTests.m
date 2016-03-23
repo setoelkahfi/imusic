@@ -50,5 +50,19 @@
     XCTAssertEqual([albums count], origAlbumCount + 1);
     
 }
+- (void)testDeleteAlbum {
+    NSArray *albums = [Album findAll];
+    NSUInteger origAlbumCount = [albums count];
+    
+    Album *album = [albums objectAtIndex:0];
+    NSNumber *deletedAlbumID = [NSNumber numberWithUnsignedInteger:album.albumID];
+    
+    [album deleteAlbum];
+    
+    albums = [Album findAll];
+    XCTAssertEqual([albums count], origAlbumCount - 1);
+    NSArray *albumIDs = [albums valueForKeyPath:@"albumID"];
+    XCTAssertFalse([albumIDs containsObject:deletedAlbumID]);
+}
 
 @end

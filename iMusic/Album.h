@@ -21,5 +21,6 @@
 
 + (NSArray *)findAll;
 - (BOOL)save;
+- (BOOL)deleteAlbum;
 
 @end

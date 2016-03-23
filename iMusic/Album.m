@@ -82,4 +82,11 @@
     return [fileData writeToURL:[[self class] iMusicDataURL] atomically:YES];
 }
 
+- (BOOL)deleteAlbum {
+    NSMutableArray *albums = (NSMutableArray *)[[self class] findAll];
+    [albums removeObjectAtIndex:0];
+    NSData *fileData = [NSKeyedArchiver archivedDataWithRootObject:albums];
+    return [fileData writeToURL:[[self class] iMusicDataURL] atomically:YES];
+}
+
 @end

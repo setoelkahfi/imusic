@@ -10,6 +10,7 @@
 		BD22B97E1C9BBC74007C7C2F /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD22B97D1C9BBC74007C7C2F /* MusicListViewController.m */; };
 		BD22B9831C9C3703007C7C2F /* iMusic.data in Resources */ = {isa = PBXBuildFile; fileRef = BD22B9801C9C3440007C7C2F /* iMusic.data */; };
 		BD2708171CA13CE600B1B39F /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD27080B1CA13CE600B1B39F /* libOCMock.a */; };
+		BD27081A1CA277A900B1B39F /* AlbumIntTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD2708191CA277A900B1B39F /* AlbumIntTests.m */; };
 		BD56161C1C97BDE1008BE0CB /* ArchivingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD56161A1C97BDE1008BE0CB /* ArchivingViewController.m */; };
 		BD56161D1C97BDE1008BE0CB /* ArchivingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD56161B1C97BDE1008BE0CB /* ArchivingView.xib */; };
 		BD63F47D1C916C2E00561D56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F47C1C916C2E00561D56 /* main.m */; };
@@ -51,6 +52,7 @@
 		BD2708141CA13CE600B1B39F /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		BD2708151CA13CE600B1B39F /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
 		BD2708161CA13CE600B1B39F /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		BD2708191CA277A900B1B39F /* AlbumIntTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumIntTests.m; sourceTree = "<group>"; };
 		BD5616191C97BDE1008BE0CB /* ArchivingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchivingViewController.h; sourceTree = "<group>"; };
 		BD56161A1C97BDE1008BE0CB /* ArchivingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchivingViewController.m; sourceTree = "<group>"; };
 		BD56161B1C97BDE1008BE0CB /* ArchivingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArchivingView.xib; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				BD63F4971C916C2F00561D56 /* Info.plist */,
 				BD7AE1151C9FD9D0007D0867 /* ArtistTests.h */,
 				BD7AE1161C9FD9D0007D0867 /* ArtistTests.m */,
+				BD2708191CA277A900B1B39F /* AlbumIntTests.m */,
 			);
 			path = iMusicTests;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7AE1171C9FD9D0007D0867 /* ArtistTests.m in Sources */,
+				BD27081A1CA277A900B1B39F /* AlbumIntTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

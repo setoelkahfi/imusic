@@ -32,4 +32,23 @@
     XCTAssertEqual([albums count], expectedCount);
 }
 
+- (void)testSaveAlbum {
+    NSUInteger origAlbumCount = [[Album findAll] count];
+    
+    Artist *theBeatles = [Artist artistWithID:1000 name:@"The Beatles"];
+    Album *abbeyRoad = [[Album alloc] init];
+    
+    abbeyRoad.albumID = 2000;
+    abbeyRoad.albumName = @"Abbey Road";
+    abbeyRoad.artist = theBeatles;
+    
+    [abbeyRoad save];
+    
+    NSArray *albums = [Album findAll];
+    NSArray *albumNames = [albums valueForKeyPath:@"albumName"];
+    XCTAssertTrue([albumNames containsObject:@"Abbey Road"]);
+    XCTAssertEqual([albums count], origAlbumCount + 1);
+    
+}
+
 @end

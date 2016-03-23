@@ -51,4 +51,15 @@
     XCTAssertEqualObjects(artist.artistName, artistName);
 }
 
+- (void)testEncodeWithCoder {
+    id mockCoder = [OCMockObject mockForClass:[NSCoder class]];
+    [[mockCoder expect] encodeInteger:artistID forKey:@"artistID"];
+    [[mockCoder expect] encodeObject:artistName forKey:@"artistName"];
+    
+    Artist *artist = [Artist artistWithID:artistID name:artistName] ;
+    [artist encodeWithCoder:mockCoder];
+    
+    [mockCoder verify];
+}
+
 @end

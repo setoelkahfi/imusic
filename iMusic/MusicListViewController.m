@@ -10,7 +10,9 @@
 #import "Album.h"
 
 @interface MusicListViewController ()
+
 @property (nonatomic, strong) NSMutableArray *albums;
+
 @end
 
 @implementation MusicListViewController
@@ -72,6 +74,14 @@
 #pragma mark - UITableViewDelegate Methods
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Album *album = [self.albums objectAtIndex:indexPath.row];
+    NSString *message = [NSString stringWithFormat:@"Artist: %@\nAlbum: %@", album.artist.artistName, album.albumName];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Selection"
+                                                        message:message
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    [alertView show];
 }
 
 @end

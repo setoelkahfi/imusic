@@ -27,13 +27,13 @@
 }
 
 - (void)testFindAll {
-    NSArray *albums = [Album findAll];
+    NSArray *albums = [Album findAllAlbums];
     NSUInteger expectedCount = 12;
     XCTAssertEqual([albums count], expectedCount);
 }
 
 - (void)testSaveAlbum {
-    NSUInteger origAlbumCount = [[Album findAll] count];
+    NSUInteger origAlbumCount = [[Album findAllAlbums] count];
     
     Artist *theBeatles = [Artist artistWithID:1000 name:@"The Beatles"];
     Album *abbeyRoad = [[Album alloc] init];
@@ -42,16 +42,16 @@
     abbeyRoad.albumName = @"Abbey Road";
     abbeyRoad.artist = theBeatles;
     
-    [abbeyRoad save];
+    [abbeyRoad saveAlbum];
     
-    NSArray *albums = [Album findAll];
+    NSArray *albums = [Album findAllAlbums];
     NSArray *albumNames = [albums valueForKeyPath:@"albumName"];
     XCTAssertTrue([albumNames containsObject:@"Abbey Road"]);
     XCTAssertEqual([albums count], origAlbumCount + 1);
     
 }
 - (void)testDeleteAlbum {
-    NSArray *albums = [Album findAll];
+    NSArray *albums = [Album findAllAlbums];
     NSUInteger origAlbumCount = [albums count];
     
     Album *album = [albums objectAtIndex:0];
@@ -59,7 +59,7 @@
     
     [album deleteAlbum];
     
-    albums = [Album findAll];
+    albums = [Album findAllAlbums];
     XCTAssertEqual([albums count], origAlbumCount - 1);
     NSArray *albumIDs = [albums valueForKeyPath:@"albumID"];
     XCTAssertFalse([albumIDs containsObject:deletedAlbumID]);

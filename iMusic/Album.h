@@ -19,8 +19,8 @@
 @property (nonatomic, copy) NSString *genre;
 @property (nonatomic, strong) Artist *artist;
 
-+ (NSArray *)findAll;
-- (BOOL)save;
++ (NSArray *)findAllAlbums;
+- (BOOL)saveAlbum;
 - (BOOL)deleteAlbum;
 
 @end

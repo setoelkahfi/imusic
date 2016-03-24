@@ -50,15 +50,15 @@
     album2.albumName = @"Revolver";
     album2.artist = artist;
     
-    [album save];
-    [album2 save];
+    [album saveAlbum];
+    [album2 saveAlbum];
     
     NSLog(@"app dir: %@",[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
 }
 
 - (IBAction)readArchivedData:(id)sender {
     
-    NSArray *albums = [Album findAll];
+    NSArray *albums = [Album findAllAlbums];
     for (id album in albums) {
         NSLog(@"%@", album);
     }

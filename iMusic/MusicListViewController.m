@@ -26,7 +26,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.albums = [NSMutableArray arrayWithArray:[Album findAll]];
+    self.albums = [NSMutableArray arrayWithArray:[Album findAllAlbums]];
     
 }
 
@@ -66,6 +66,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        Album *album = [self.albums objectAtIndex:indexPath.row];
+        [album deleteAlbum];
         [self.albums removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }   

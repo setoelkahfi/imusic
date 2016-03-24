@@ -67,7 +67,7 @@
     return [[urls lastObject] URLByAppendingPathComponent:@"iMusic.data"];
 }
 
-+ (NSArray *)findAll {
++ (NSArray *)findAllAlbums {
     NSData *data = [NSData dataWithContentsOfURL:[self iMusicDataURL]];
     if (!data) {
         return [NSMutableArray array];
@@ -75,18 +75,35 @@
     return [NSKeyedUnarchiver unarchiveObjectWithData:data];
 }
 
-- (BOOL)save {
-    NSMutableArray *albums = (NSMutableArray *)[[self class] findAll];
+- (BOOL)saveAlbum {
+    NSMutableArray *albums = (NSMutableArray *)[[self class] findAllAlbums];
     [albums insertObject:self atIndex:0];
     NSData *fileData = [NSKeyedArchiver archivedDataWithRootObject:albums];
     return [fileData writeToURL:[[self class] iMusicDataURL] atomically:YES];
 }
 
 - (BOOL)deleteAlbum {
-    NSMutableArray *albums = (NSMutableArray *)[[self class] findAll];
-    [albums removeObjectAtIndex:0];
+    NSMutableArray *albums = (NSMutableArray *)[[self class] findAllAlbums];
+    [albums removeObject:self];
     NSData *fileData = [NSKeyedArchiver archivedDataWithRootObject:albums];
     return [fileData writeToURL:[[self class] iMusicDataURL] atomically:YES];
+}
+
+- (BOOL)isEqual:(id)object {
+    
+    if (self == object) {
+        return YES;
+    }
+    
+    if (!object || ![object isMemberOfClass:[self class]]) {
+        return NO;
+    }
+    
+    return [object albumID] == self.albumID;
+}
+
+- (NSUInteger)hash {
+    return [[NSNumber numberWithInteger:self.albumID] hash];
 }
 
 @end

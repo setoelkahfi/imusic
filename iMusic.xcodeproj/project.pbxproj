@@ -20,8 +20,6 @@
 		BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4871C916C2F00561D56 /* Assets.xcassets */; };
 		BD63F4A61C91835900561D56 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4A51C91835900561D56 /* MainViewController.m */; };
 		BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD63F4AC1C927DA100561D56 /* AboutViewController.m */; };
-		BD63F4B01C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
-		BD63F4B11C927DA100561D56 /* AboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD63F4AD1C927DA100561D56 /* AboutView.xib */; };
 		BD7AE1171C9FD9D0007D0867 /* ArtistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7AE1161C9FD9D0007D0867 /* ArtistTests.m */; };
 		BDB7528D1CA8D659007B3A87 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB7528C1CA8D659007B3A87 /* MainStoryboard.storyboard */; };
 		BDB7528E1CA8D659007B3A87 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB7528C1CA8D659007B3A87 /* MainStoryboard.storyboard */; };
@@ -70,7 +68,6 @@
 		BD63F4A51C91835900561D56 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 		BD63F4AB1C927DA100561D56 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = ../AboutViewController.h; sourceTree = "<group>"; };
 		BD63F4AC1C927DA100561D56 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = ../AboutViewController.m; sourceTree = "<group>"; };
-		BD63F4AD1C927DA100561D56 /* AboutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AboutView.xib; path = ../AboutView.xib; sourceTree = "<group>"; };
 		BD63F4B61C92A7E000561D56 /* iMusic-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iMusic-prefix.pch"; sourceTree = "<group>"; };
 		BD7AE1151C9FD9D0007D0867 /* ArtistTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistTests.h; sourceTree = "<group>"; };
 		BD7AE1161C9FD9D0007D0867 /* ArtistTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistTests.m; sourceTree = "<group>"; };
@@ -205,7 +202,6 @@
 			children = (
 				BD63F4AB1C927DA100561D56 /* AboutViewController.h */,
 				BD63F4AC1C927DA100561D56 /* AboutViewController.m */,
-				BD63F4AD1C927DA100561D56 /* AboutView.xib */,
 				BD63F4A41C91835900561D56 /* MainViewController.h */,
 				BD63F4A51C91835900561D56 /* MainViewController.m */,
 				BD22B97C1C9BBC73007C7C2F /* MusicListViewController.h */,
@@ -301,7 +297,6 @@
 				BD27081F1CA27F0500B1B39F /* iMusic.data in Resources */,
 				BD63F4881C916C2F00561D56 /* Assets.xcassets in Resources */,
 				BD56161D1C97BDE1008BE0CB /* ArchivingView.xib in Resources */,
-				BD63F4B01C927DA100561D56 /* AboutView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +304,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD63F4B11C927DA100561D56 /* AboutView.xib in Resources */,
 				BDB7528E1CA8D659007B3A87 /* MainStoryboard.storyboard in Resources */,
 				BD27081D1CA27CAA00B1B39F /* iMusic.data in Resources */,
 			);

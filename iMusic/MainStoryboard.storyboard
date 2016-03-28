@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -56,6 +57,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="showAboutView:" destination="dX4-Ad-jg6" eventType="touchUpInside" id="Zvw-rc-iWS"/>
+                                    <segue destination="5z7-f0-2vl" kind="presentation" id="HFh-Yf-vzV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -103,6 +105,138 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cP-cp-leI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1959" y="555.75"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="O3s-Tj-f9U">
+            <objects>
+                <viewController id="5z7-f0-2vl" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SDH-g7-996"/>
+                        <viewControllerLayoutGuide type="bottom" id="ujO-hk-knx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lkC-Qk-bww">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htR-8S-mzb">
+                                <rect key="frame" x="8" y="24" width="377" height="44"/>
+                                <color key="backgroundColor" red="0.70933734940000004" green="0.090388935200000006" blue="0.03172549149" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="iMusic" id="RRK-Fq-9hj">
+                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="LUv-Wx-K6b">
+                                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="dismissAboutView:" destination="5z7-f0-2vl" id="TrG-Ew-C4D"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by @setoelkahfi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g46-I0-g6c">
+                                <rect key="frame" x="103" y="297" width="187" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="187" id="dq6-a6-dhz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dq6-a6-dhz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="dq6-a6-dhz"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B58-lU-3TE">
+                                <rect key="frame" x="133" y="380" width="127" height="30"/>
+                                <state key="normal" title="Reset sample data"/>
+                                <connections>
+                                    <action selector="resetSampleData:" destination="5z7-f0-2vl" eventType="touchUpInside" id="NgY-zi-XHc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About iMusic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5l-MQ-buU">
+                                <rect key="frame" x="92" y="148" width="208" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="eRZ-gq-7dI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eRZ-gq-7dI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="eRZ-gq-7dI"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B58-lU-3TE" firstAttribute="centerX" secondItem="lkC-Qk-bww" secondAttribute="centerX" id="8rL-YE-z0d"/>
+                            <constraint firstItem="g46-I0-g6c" firstAttribute="top" secondItem="w5l-MQ-buU" secondAttribute="bottom" constant="101" id="DiU-EM-jaa"/>
+                            <constraint firstItem="g46-I0-g6c" firstAttribute="centerX" secondItem="lkC-Qk-bww" secondAttribute="centerX" id="Kiv-Ih-tcX"/>
+                            <constraint firstItem="w5l-MQ-buU" firstAttribute="top" secondItem="htR-8S-mzb" secondAttribute="bottom" constant="152" id="O27-mb-CH4"/>
+                            <constraint firstItem="htR-8S-mzb" firstAttribute="top" secondItem="SDH-g7-996" secondAttribute="bottom" id="V2b-ob-kYk"/>
+                            <constraint firstItem="htR-8S-mzb" firstAttribute="centerX" secondItem="lkC-Qk-bww" secondAttribute="centerX" id="X18-Xj-SXf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="htR-8S-mzb" secondAttribute="leading" id="Z9U-2p-eyU"/>
+                            <constraint firstItem="B58-lU-3TE" firstAttribute="top" secondItem="g46-I0-g6c" secondAttribute="bottom" constant="62" id="cjj-3B-Nu7"/>
+                            <constraint firstItem="w5l-MQ-buU" firstAttribute="centerX" secondItem="lkC-Qk-bww" secondAttribute="centerX" id="gxO-LA-0Uw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="htR-8S-mzb" secondAttribute="trailing" id="hON-ty-1mQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="htR-8S-mzb"/>
+                                <exclude reference="g46-I0-g6c"/>
+                                <exclude reference="B58-lU-3TE"/>
+                                <exclude reference="w5l-MQ-buU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="V2b-ob-kYk"/>
+                                <exclude reference="X18-Xj-SXf"/>
+                                <exclude reference="Z9U-2p-eyU"/>
+                                <exclude reference="hON-ty-1mQ"/>
+                                <exclude reference="O27-mb-CH4"/>
+                                <exclude reference="gxO-LA-0Uw"/>
+                                <exclude reference="DiU-EM-jaa"/>
+                                <exclude reference="Kiv-Ih-tcX"/>
+                                <exclude reference="8rL-YE-z0d"/>
+                                <exclude reference="cjj-3B-Nu7"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="htR-8S-mzb"/>
+                                <include reference="g46-I0-g6c"/>
+                                <include reference="B58-lU-3TE"/>
+                                <include reference="w5l-MQ-buU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="V2b-ob-kYk"/>
+                                <include reference="X18-Xj-SXf"/>
+                                <include reference="Z9U-2p-eyU"/>
+                                <include reference="hON-ty-1mQ"/>
+                                <include reference="O27-mb-CH4"/>
+                                <include reference="gxO-LA-0Uw"/>
+                                <include reference="DiU-EM-jaa"/>
+                                <include reference="Kiv-Ih-tcX"/>
+                                <include reference="8rL-YE-z0d"/>
+                                <include reference="cjj-3B-Nu7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fr6-9L-usZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771" y="1242"/>
         </scene>
     </scenes>
 </document>

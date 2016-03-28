@@ -64,7 +64,7 @@
 }
 
 - (IBAction)showAboutView:(id)sender {
-    id controller = [[AboutViewController alloc] initWithNibName:@"AboutView" bundle:NULL];
+    id controller = [[AboutViewController alloc] init];
     [self presentViewController:controller animated:YES completion:NULL];
 }
 

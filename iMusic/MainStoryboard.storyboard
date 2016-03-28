@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uLw-jZ-EYz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="L12-dA-lC3">
+            <objects>
+                <viewController id="dX4-Ad-jg6" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GBq-gv-8Ay"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bue-dr-NgC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pgR-lw-ud1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se2-5t-cat">
+                                <rect key="frame" x="245" y="284" width="111" height="48"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="View List">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="245" y="396" width="111" height="48"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="108" y="338" width="184" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showList:" destination="dX4-Ad-jg6" eventType="touchUpInside" id="PZU-vH-chG"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qxm-kk-TgB">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="180" y="132" width="240" height="128"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="120" width="240" height="98"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9t-Q0-ToA">
+                                <rect key="frame" x="235" y="368" width="131" height="61"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="About iMusic">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="235" y="486" width="131" height="61"/>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="108" y="451" width="184" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showAboutView:" destination="dX4-Ad-jg6" eventType="touchUpInside" id="Zvw-rc-iWS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="se2-5t-cat"/>
+                                <exclude reference="Qxm-kk-TgB"/>
+                                <exclude reference="V9t-Q0-ToA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="se2-5t-cat"/>
+                                <include reference="Qxm-kk-TgB"/>
+                                <include reference="V9t-Q0-ToA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="nj4-8q-H71"/>
+                    <connections>
+                        <outlet property="buttonAbout" destination="V9t-Q0-ToA" id="NPe-P1-LWy"/>
+                        <outlet property="buttonViewList" destination="se2-5t-cat" id="wNx-ku-nVo"/>
+                        <outlet property="imageLogo" destination="Qxm-kk-TgB" id="kd9-8l-xee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoZ-Ut-D21" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2771" y="555.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DD9-xP-4Vt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uLw-jZ-EYz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6iv-8e-TeD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dX4-Ad-jg6" kind="relationship" relationship="rootViewController" id="mgv-hu-C3z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2cP-cp-leI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959" y="555.75"/>
+        </scene>
+    </scenes>
+</document>

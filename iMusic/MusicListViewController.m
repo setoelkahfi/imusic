@@ -42,12 +42,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	static NSString *CellIdentifier = @"Cell";
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumCell"];
     
     Album *album = [self.albums objectAtIndex:indexPath.row];
     cell.imageView.image = album.albumImage;
@@ -75,16 +71,16 @@
 
 
 #pragma mark - UITableViewDelegate Methods
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    Album *album = [self.albums objectAtIndex:indexPath.row];
-    NSString *message = [NSString stringWithFormat:@"Artist: %@\nAlbum: %@", album.artist.artistName, album.albumName];
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Selection"
-                                                        message:message
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-    [alertView show];
-}
+//
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    Album *album = [self.albums objectAtIndex:indexPath.row];
+//    NSString *message = [NSString stringWithFormat:@"Artist: %@\nAlbum: %@", album.artist.artistName, album.albumName];
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Selection"
+//                                                        message:message
+//                                                       delegate:nil
+//                                              cancelButtonTitle:@"OK"
+//                                              otherButtonTitles:nil];
+//    [alertView show];
+//}
 
 @end

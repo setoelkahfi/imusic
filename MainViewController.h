@@ -13,8 +13,4 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonViewList;
 @property (weak, nonatomic) IBOutlet UIButton *buttonAbout;
 
-
-- (IBAction)showAboutView:(id)sender;
-- (IBAction)showList:(id)sender;
-
 @end

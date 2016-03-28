@@ -53,24 +53,4 @@
 	[super viewDidUnload];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    NSLog(@"viewWillAppear");
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    NSLog(@"viewWillDisappear");
-}
-
-- (IBAction)showAboutView:(id)sender {
-    id controller = [[AboutViewController alloc] init];
-    [self presentViewController:controller animated:YES completion:NULL];
-}
-
-- (IBAction)showList:(id)sender {
-    id controller = [[MusicListViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self.navigationController pushViewController:controller animated:YES];
-}
-
 @end

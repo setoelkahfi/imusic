@@ -23,6 +23,8 @@
 		BD7AE1171C9FD9D0007D0867 /* ArtistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7AE1161C9FD9D0007D0867 /* ArtistTests.m */; };
 		BDB7528D1CA8D659007B3A87 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB7528C1CA8D659007B3A87 /* MainStoryboard.storyboard */; };
 		BDB7528E1CA8D659007B3A87 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB7528C1CA8D659007B3A87 /* MainStoryboard.storyboard */; };
+		BDB752931CA9379B007B3A87 /* MusicListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB752921CA9379B007B3A87 /* MusicListCell.m */; };
+		BDB752941CA9379E007B3A87 /* MusicListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB752921CA9379B007B3A87 /* MusicListCell.m */; };
 		BDF5E7241C966B520023D5A4 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7231C966B520023D5A4 /* Artist.m */; };
 		BDF5E7281C97AD530023D5A4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF5E7271C97AD530023D5A4 /* Album.m */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,8 @@
 		BD7AE1151C9FD9D0007D0867 /* ArtistTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistTests.h; sourceTree = "<group>"; };
 		BD7AE1161C9FD9D0007D0867 /* ArtistTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistTests.m; sourceTree = "<group>"; };
 		BDB7528C1CA8D659007B3A87 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BDB752911CA9379B007B3A87 /* MusicListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicListCell.h; sourceTree = "<group>"; };
+		BDB752921CA9379B007B3A87 /* MusicListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListCell.m; sourceTree = "<group>"; };
 		BDF5E7221C966B520023D5A4 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		BDF5E7231C966B520023D5A4 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		BDF5E7261C97AD530023D5A4 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
@@ -186,6 +190,15 @@
 			path = iMusicTests;
 			sourceTree = "<group>";
 		};
+		BDB752901CA93753007B3A87 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BDB752911CA9379B007B3A87 /* MusicListCell.h */,
+				BDB752921CA9379B007B3A87 /* MusicListCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		BDF5E71F1C9667790023D5A4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +213,7 @@
 		BDF5E7201C96684B0023D5A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BDB752901CA93753007B3A87 /* Cells */,
 				BD63F4AB1C927DA100561D56 /* AboutViewController.h */,
 				BD63F4AC1C927DA100561D56 /* AboutViewController.m */,
 				BD63F4A41C91835900561D56 /* MainViewController.h */,
@@ -323,6 +337,7 @@
 				BD63F47D1C916C2E00561D56 /* main.m in Sources */,
 				BD22B97E1C9BBC74007C7C2F /* MusicListViewController.m in Sources */,
 				BDF5E7281C97AD530023D5A4 /* Album.m in Sources */,
+				BDB752931CA9379B007B3A87 /* MusicListCell.m in Sources */,
 				BD63F4AE1C927DA100561D56 /* AboutViewController.m in Sources */,
 				BDF5E7241C966B520023D5A4 /* Artist.m in Sources */,
 			);
@@ -332,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB752941CA9379E007B3A87 /* MusicListCell.m in Sources */,
 				BD7AE1171C9FD9D0007D0867 /* ArtistTests.m in Sources */,
 				BD27081A1CA277A900B1B39F /* AlbumIntTests.m in Sources */,
 			);

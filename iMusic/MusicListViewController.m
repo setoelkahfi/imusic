@@ -8,6 +8,7 @@
 
 #import "MusicListViewController.h"
 #import "Album.h"
+#import "MusicListCell.h"
 
 @interface MusicListViewController ()
 
@@ -43,11 +44,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumCell"];
+	MusicListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlbumCell"];
     
     Album *album = [self.albums objectAtIndex:indexPath.row];
-    cell.imageView.image = album.albumImage;
-    cell.textLabel.text = album.albumName;
+    cell.albumImageView.image = album.albumImage;
+    cell.albumNameLabel.text = album.albumName;
+    cell.artistNameLabel.text = album.artist.artistName;
 
 	return cell;
 }
